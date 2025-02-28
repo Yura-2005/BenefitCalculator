@@ -44,11 +44,11 @@
             this.lblResult = new System.Windows.Forms.Label();
             
             // Labels and Inputs
-            System.Windows.Forms.Label[] labels = { lblCategory, lblFamilyMembers, lblArea, lblElectricity, lblGas, lblWater };
-            System.Windows.Forms.Control[] inputs = { cmbCategory, txtFamilyMembers, txtArea, txtElectricity, txtGas, txtWater };
+            System.Windows.Forms.Label[] labels = { lblCategory, lblFamilyMembers, lblElectricity, lblGas, lblWater };
+            System.Windows.Forms.Control[] inputs = { cmbCategory, txtFamilyMembers, txtElectricity, txtGas, txtWater };
             
             string[] labelTexts = {
-                "Категорія пільговика:", "Кількість членів сім'ї:", "Площа житла (м²):",
+                "Категорія пільговика:", "Кількість членів сім'ї:",
                 "Витрати електроенергії (кВт):", "Витрати газу (м³):", "Витрати води (м³):"
             };
             
@@ -63,7 +63,7 @@
                 inputs[i].Size = new System.Drawing.Size(inputWidth, 22);
             }
             
-            this.cmbCategory.Items.AddRange(new object[] { "Одинокий інвалід", "Особа з інвалідністю (50%)", "Ветеран УПА (75%)" });
+            this.cmbCategory.Items.AddRange(new object[] { "Одинокий інвалід", "Ветеран УПА (75%)", "Особа з інвалідністю (50%)" });
             
             // Buttons
             this.btnCalculate.Text = "Розрахувати";

@@ -16,7 +16,6 @@ namespace BenefitCalculator
             {
                 string category = cmbCategory.SelectedItem.ToString();
                 int familyMembers = int.Parse(txtFamilyMembers.Text);
-                double area = double.Parse(txtArea.Text);
                 double electricity = double.Parse(txtElectricity.Text);
                 double gas = double.Parse(txtGas.Text);
                 double water = double.Parse(txtWater.Text);
@@ -56,7 +55,6 @@ namespace BenefitCalculator
         {
             cmbCategory.SelectedIndex = -1;
             txtFamilyMembers.Text = "";
-            txtArea.Text = "";
             txtElectricity.Text = "";
             txtGas.Text = "";
             txtWater.Text = "";
