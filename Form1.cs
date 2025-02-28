@@ -27,12 +27,12 @@ namespace BenefitCalculator
                 else if (category == "Особа з інвалідністю (50%)")
                     discount = 0.5; // 50%
                 else if (category == "Ветеран УПА (75%)")
-                    discount = 0.75; // 75%
+                    discount = 0.25; // 75%
 
                 // double totalBeforeDiscount = (electricity * 1.44) + (gas * 7) + (water * 10) + (area * 20);
                 // double totalCost = totalBeforeDiscount * (1 - discount);
 
-                double totalBeforeDiscount = (electricity * 1.44) + (gas * 7) + (water * 10) + (area * 20);
+                double totalBeforeDiscount = (electricity * 4.32) + (gas * 8) + (water * 90);
 
                 double totalCost;
                 if (discount == 1.0)
@@ -54,6 +54,7 @@ namespace BenefitCalculator
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            cmbCategory.SelectedIndex = -1;
             txtFamilyMembers.Text = "";
             txtArea.Text = "";
             txtElectricity.Text = "";
